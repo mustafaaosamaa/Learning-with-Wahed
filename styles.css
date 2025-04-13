@@ -1,6 +1,7 @@
 body{
     background-color: #232830;
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 nav {
@@ -10,7 +11,7 @@ nav {
     font-size: 30px;
     font-family: 'Poppins';
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .right-nav {
@@ -30,7 +31,7 @@ nav {
     font-style: italic;
     color: #ff7575;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .aside-slogan {
@@ -39,7 +40,7 @@ nav {
     font-weight: 400;
     color: #ffffff;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .categories{
@@ -52,10 +53,69 @@ nav {
     font-style: italic;
     font-size: 27px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .grid-icon, .list-icon {
     width: 24px;
     height: 24px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1244px;
+    height: 1391px;
+}
+
+.card {
+    width: 390px;
+    height: 439px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    border: 1px;
+    padding: 26px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #0f1217;
+    margin-top: 40px;
+}
+
+.sub-heading {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #0f1217;
+    display: flex;
+    margin-top: 40px;
+}
+
+.card-image {
+    width: 337.08px;
+    height: 160px;
+    border-radius: 22px;
+}
+
+.date-box {
+    gap: 28px;
+    position: absolute;
+    bottom: 16px;
 }
