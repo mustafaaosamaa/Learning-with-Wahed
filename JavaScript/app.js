@@ -39,7 +39,7 @@ searchButton.addEventListener('click', () => {
 const savedUser = localStorage.getItem("lastUser");
 
 if (savedUser) {
-    const data = JSON.parse(savedUser); // convert string back to object
+    const data = JSON.parse(savedUser);
     const userInfo = document.getElementById('user-info');
     userInfo.innerHTML = `
         <h2>${data.name}</h2>
